@@ -23,16 +23,25 @@
         <ion-icon class="text-sky-500 text-2xl" name="code-slash-outline"></ion-icon>
         Josevictor
       </a>
-      <nav>
-        <ul class="flex gap-5">
-          <li><a class="font-semibold text-sm hover:text-sky-500" href="#inicio">Inicio</a></li>
-          <li><a class="font-semibold text-sm hover:text-sky-500" href="#tecnologias">Tecnologias</a></li>
-          <li><a class="font-semibold text-sm hover:text-sky-500" href="#sobre">Sobre</a></li>
-          <li><a class="font-semibold text-sm hover:text-sky-500" href="#projetos">Projetos</a></li>
-          <li><a class="font-semibold text-sm hover:text-sky-500" href="#contato">Contato</a></li>
+      <nav id="menu-mobile" class="hidden lg:block items-center z-40 max-lg:fixed max-lg:w-full max-lg:inset-0">
+        <div class="fixed lg:hidden inset-0 bg-black/40 backdrop-blur-lg">
+          <div class="flex items-center justify-between p-8">
+            <a class="flex items-center gap-3 font-bold text-3xl text-white" href="#">
+              <ion-icon class="text-white text-3xl" name="code-slash-outline"></ion-icon>
+              Josevictor
+            </a>
+            <ion-icon id="button-close-menu" name="close-outline" class="text-4xl text-white cursor-pointer hover:bg-white/10 rounded-full p-2"></ion-icon>
+          </div>
+        </div>
+        <ul class="text-white lg:text-black text-2xl lg:text-sm lg:flex lg:flex-wrap lg:gap-4 max-lg:z-50 max-lg:absolute max-lg:divide-y-2 max-lg:divide-white/10 max-lg:p-8 max-lg:w-full">
+          <li><a class="lg:font-semibold lg:hover:text-sky-500 p-4 block lg:px-0 lg:py-2 max-lg:hover:bg-white/10" href="#inicio">Inicio</a></li>
+          <li><a class="lg:font-semibold lg:hover:text-sky-500 p-4 block lg:px-0 lg:py-2 max-lg:hover:bg-white/10" href="#tecnologias">Tecnologias</a></li>
+          <li><a class="lg:font-semibold lg:hover:text-sky-500 p-4 block lg:px-0 lg:py-2 max-lg:hover:bg-white/10" href="#sobre">Sobre</a></li>
+          <li><a class="lg:font-semibold lg:hover:text-sky-500 p-4 block lg:px-0 lg:py-2 max-lg:hover:bg-white/10" href="#projetos">Projetos</a></li>
+          <li><a class="lg:font-semibold lg:hover:text-sky-500 p-4 block lg:px-0 lg:py-2 max-lg:hover:bg-white/10" href="#contato">Contato</a></li>
         </ul>
       </nav>
-      <button class="hidden"><ion-icon size="large" name="menu-outline"></ion-icon></button>
+      <button id="button-mobile" class="flex lg:hidden cursor-pointer hover:bg-black/10 rounded-full p-2"><ion-icon size="large" name="menu-outline"></ion-icon></button>
     </div>
   </header>
   <!-- introducao -->
@@ -46,7 +55,7 @@
         </div>
         <p class="mt-4 text-base text-slate-600 lg:max-w-[800px] text-start lg:text-justify">Transformo ideias em interfaces interativas e intuitivas, unindo criatividade, tecnologia e atenção aos detalhes para desenvolver soluções funcionais e esteticamente atraentes. Sempre priorizo a usabilidade e acessibilidade, criando experiências digitais que conectam pessoas e marcas de forma significativa e memorável."</p>
         <div class="flex items-center mt-4 gap-4 max-md:mb-5">
-          <a class="flex py-2 px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer">Contato</a>
+          <a href="#contato" class="flex py-2 px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer">Contato</a>
           <div class="flex items-center gap-3 *:cursor-pointer *:hover:scale-110">
             <img class="w-8 h-8" src="assets/github.png" alt="logo-github">
             <img class="w-8 h-8" src="assets/linkedin.png" alt="logo-linkdin">
@@ -167,8 +176,8 @@
               <img class="w-[400px] h-[200px] lg:w-[500px] lg:h-[300px]" src="assets/cardapio-desktop.png">
             </div>
             <div class="flex justify-center lg:hidden gap-5 mt-5">
-              <a class="flex gap-2 items-center py-2 px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://fitzone-kohl.vercel.app/" target="_blank"><ion-icon class="text-2xl text-white" name="eye-outline"></ion-icon>Visualizar</a>
-              <a class="flex gap-2 py-2 items-center px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://github.com/josevictormoura/fitzone" target="_blank"><ion-icon class="text-2xl" name="logo-github"></ion-icon>Github</a>
+              <a class="flex gap-2 items-center py-2 px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://josevictormoura.github.io/cardapio-online/src/index.html" target="_blank"><ion-icon class="text-2xl text-white" name="eye-outline"></ion-icon>Visualizar</a>
+              <a class="flex gap-2 py-2 items-center px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://github.com/josevictormoura/cardapio-online" target="_blank"><ion-icon class="text-2xl" name="logo-github"></ion-icon>Github</a>
             </div>
           </div>
           <div>
@@ -196,8 +205,8 @@
               <img class="h-[200px] lg:h-[300px]" src="assets/app-previsao-not-found.png">
             </div>
             <div class="flex justify-center lg:hidden gap-5 mt-5">
-              <a class="flex gap-2 items-center py-2 px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://fitzone-kohl.vercel.app/" target="_blank"><ion-icon class="text-2xl text-white" name="eye-outline"></ion-icon>Visualizar</a>
-              <a class="flex gap-2 py-2 items-center px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://github.com/josevictormoura/fitzone" target="_blank"><ion-icon class="text-2xl" name="logo-github"></ion-icon>Github</a>
+              <a class="flex gap-2 items-center py-2 px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://josevictormoura.github.io/app-previsao-tempo/" target="_blank"><ion-icon class="text-2xl text-white" name="eye-outline"></ion-icon>Visualizar</a>
+              <a class="flex gap-2 py-2 items-center px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://github.com/josevictormoura/app-previsao-tempo" target="_blank"><ion-icon class="text-2xl" name="logo-github"></ion-icon>Github</a>
             </div>
           </div>
           <div>
@@ -224,8 +233,8 @@
               <img class="w-[400px] h-[200px] lg:w-[500px] lg:h-[300px]" src="assets/florest-desktop.png">
             </div>
             <div class="flex justify-center lg:hidden gap-5 mt-5">
-              <a class="flex gap-2 items-center py-2 px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://fitzone-kohl.vercel.app/" target="_blank"><ion-icon class="text-2xl text-white" name="eye-outline"></ion-icon>Visualizar</a>
-              <a class="flex gap-2 py-2 items-center px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://github.com/josevictormoura/fitzone" target="_blank"><ion-icon class="text-2xl" name="logo-github"></ion-icon>Github</a>
+              <a class="flex gap-2 items-center py-2 px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://josevictormoura.github.io/florest-reservas/src/index.html" target="_blank"><ion-icon class="text-2xl text-white" name="eye-outline"></ion-icon>Visualizar</a>
+              <a class="flex gap-2 py-2 items-center px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://github.com/josevictormoura/florest-reservas" target="_blank"><ion-icon class="text-2xl" name="logo-github"></ion-icon>Github</a>
             </div>
           </div>
           <div>
@@ -252,8 +261,8 @@
               <img class="w-[400px] h-[200px] lg:w-[500px] lg:h-[300px]" src="assets/controle-user-desktop.png">
             </div>
             <div class="flex justify-center lg:hidden gap-5 mt-5">
-              <a class="flex gap-2 items-center py-2 px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://josevictormoura.github.io/florest-reservas/src/index.html" target="_blank"><ion-icon class="text-2xl text-white" name="eye-outline"></ion-icon>Visualizar</a>
-              <a class="flex gap-2 py-2 items-center px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://github.com/josevictormoura/florest-reservas" target="_blank"><ion-icon class="text-2xl" name="logo-github"></ion-icon>Github</a>
+              <a class="flex gap-2 items-center py-2 px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://josevictormoura.github.io/cadastro-usuarios/" target="_blank"><ion-icon class="text-2xl text-white" name="eye-outline"></ion-icon>Visualizar</a>
+              <a class="flex gap-2 py-2 items-center px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://github.com/josevictormoura/cadastro-usuarios" target="_blank"><ion-icon class="text-2xl" name="logo-github"></ion-icon>Github</a>
             </div>
           </div>
           <div class="flex flex-col">
@@ -280,8 +289,8 @@
               <img class="h-[200px] lg:h-[300px]" src="assets/controle-financeiro-mobile.png">
             </div>
             <div class="flex justify-center lg:hidden gap-5 mt-5">
-              <a class="flex gap-2 items-center py-2 px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://fitzone-kohl.vercel.app/" target="_blank"><ion-icon class="text-2xl text-white" name="eye-outline"></ion-icon>Visualizar</a>
-              <a class="flex gap-2 py-2 items-center px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://github.com/josevictormoura/fitzone" target="_blank"><ion-icon class="text-2xl" name="logo-github"></ion-icon>Github</a>
+              <a class="flex gap-2 items-center py-2 px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://josevictormoura.github.io/controle-finaceiro/" target="_blank"><ion-icon class="text-2xl text-white" name="eye-outline"></ion-icon>Visualizar</a>
+              <a class="flex gap-2 py-2 items-center px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://github.com/josevictormoura/controle-finaceiro" target="_blank"><ion-icon class="text-2xl" name="logo-github"></ion-icon>Github</a>
             </div>
           </div>
           <div>
@@ -308,8 +317,8 @@
               <img class="w-[400px] h-[200px] lg:w-[500px] lg:h-[300px]" src="assets/easy-bank-desktop.png">
             </div>
             <div class="flex justify-center lg:hidden gap-5 mt-5">
-              <a class="flex gap-2 items-center py-2 px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://fitzone-kohl.vercel.app/" target="_blank"><ion-icon class="text-2xl text-white" name="eye-outline"></ion-icon>Visualizar</a>
-              <a class="flex gap-2 py-2 items-center px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://github.com/josevictormoura/fitzone" target="_blank"><ion-icon class="text-2xl" name="logo-github"></ion-icon>Github</a>
+              <a class="flex gap-2 items-center py-2 px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://josevictormoura.github.io/esybank-landing-page/" target="_blank"><ion-icon class="text-2xl text-white" name="eye-outline"></ion-icon>Visualizar</a>
+              <a class="flex gap-2 py-2 items-center px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://github.com/josevictormoura/esybank-landing-page" target="_blank"><ion-icon class="text-2xl" name="logo-github"></ion-icon>Github</a>
             </div>
           </div>
           <div>
@@ -335,8 +344,8 @@
               <img class="w-[400px] h-[200px] lg:w-[500px] lg:h-[300px]" src="assets/tela-login-desktop.png">
             </div>
             <div class="flex justify-center lg:hidden gap-5 mt-5">
-              <a class="flex gap-2 items-center py-2 px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://fitzone-kohl.vercel.app/" target="_blank"><ion-icon class="text-2xl text-white" name="eye-outline"></ion-icon>Visualizar</a>
-              <a class="flex gap-2 py-2 items-center px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://github.com/josevictormoura/fitzone" target="_blank"><ion-icon class="text-2xl" name="logo-github"></ion-icon>Github</a>
+              <a class="flex gap-2 items-center py-2 px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://josevictormoura.github.io/tela-login/" target="_blank"><ion-icon class="text-2xl text-white" name="eye-outline"></ion-icon>Visualizar</a>
+              <a class="flex gap-2 py-2 items-center px-5 font-semibold transition text-white bg-sky-500 hover:scale-95 rounded-full cursor-pointer" href="https://github.com/josevictormoura/tela-login" target="_blank"><ion-icon class="text-2xl" name="logo-github"></ion-icon>Github</a>
             </div>
           </div>
           <div>
@@ -395,6 +404,7 @@
       </div>
     </div>
   </footer>
+  <script src="main.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
