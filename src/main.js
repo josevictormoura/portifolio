@@ -17,3 +17,12 @@ function closeMenu({target}) {
 
 mobileMenu.addEventListener('click', closeMenu)
 mobileButton.addEventListener('click', showMenu)
+
+const form = document.querySelector('#form')
+
+function handleSubmit(event) {
+  event.preventDefault()
+  window.location.href = 'email-sucess.html'
+}
+
+form.addEventListener('submit', handleSubmit)
