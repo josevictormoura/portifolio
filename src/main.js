@@ -1,3 +1,4 @@
+// menu mobile
 const mobileButton = document.getElementById('button-mobile')
 const mobileMenu = document.getElementById('menu-mobile')
 
@@ -18,6 +19,7 @@ function closeMenu({target}) {
 mobileMenu.addEventListener('click', closeMenu)
 mobileButton.addEventListener('click', showMenu)
 
+// troca tela submit
 const form = document.querySelector('#form')
 
 function handleSubmit(event) {
@@ -26,3 +28,10 @@ function handleSubmit(event) {
 }
 
 form.addEventListener('submit', handleSubmit)
+
+// srollreveal
+ScrollReveal().reveal('.text-introduction', {origin: 'left', duration: 2000, distance: '20%'});
+ScrollReveal().reveal('.imagem-pessoal', {origin: 'rigth', duration: 2000, distance: '20%'});
+ScrollReveal().reveal('.content-sobre', {origin: 'right', duration: 1000, distance: '20%'});
+ScrollReveal().reveal('.content-contato', {origin: 'right', duration: 1000, distance: '20%'});
+ScrollReveal().reveal('#form', {origin: 'left', duration: 2000, distance: '20%'});
