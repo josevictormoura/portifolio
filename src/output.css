@@ -728,9 +728,6 @@
   .justify-self-end {
     justify-self: flex-end;
   }
-  .overflow-hidden {
-    overflow: hidden;
-  }
   .overflow-x-hidden {
     overflow-x: hidden;
   }
